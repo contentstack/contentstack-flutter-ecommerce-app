@@ -1,4 +1,5 @@
 import 'package:ecommerce/src/homepage/griditems.dart';
+import 'package:ecommerce/src/homepage/progressbar.dart';
 import 'package:ecommerce/src/model/entrymodel.dart';
 import 'package:ecommerce/src/network/request.dart';
 import 'package:flutter/cupertino.dart';
@@ -73,7 +74,9 @@ class _HomePageState extends State<HomePage> {
           ),
         ),
       ),
-      body: GridItems(lamps: lamps, orientation: orientation),
+      body: lamps.length == 0
+          ? ShowProgressBar()
+          : GridItems(lamps: lamps, orientation: orientation),
       floatingActionButton: FloatingActionButton(
         onPressed: () => print('object'),
         tooltip: 'Increment',
@@ -82,3 +85,4 @@ class _HomePageState extends State<HomePage> {
     );
   }
 }
+

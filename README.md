@@ -8,9 +8,22 @@ Contentstack is a headless CMS with an API-first approach that puts content at t
 
 Create an Flutter E-Commerce app using Contentstack Dart SDK.
 
-**screenshots**:
 
-<img src='https://github.com/contentstack/contentstack-android-ecommerce-app/blob/master/app/src/main/assets/screen1.png' width='250' height='510'/> ... <img src='https://github.com/contentstack/contentstack-android-ecommerce-app/blob/master/app/src/main/assets/screen2.png' width='250' height='510'/> ... <img src='https://github.com/contentstack/contentstack-android-ecommerce-app/blob/master/app/src/main/assets/screen3.png' width='250' height='510'/>
+<p align="center">
+  <img src="https://github.com/initone1/contentstack_ecommerce_flutter_app/blob/master/assets/screens/mobile_home.png" width="650" title="home page">
+  
+<img src="https://github.com/initone1/contentstack_ecommerce_flutter_app/blob/master/assets/screens/mobile_detail_1.png" width="650" alt="accessibility text">
+
+  <img src="https://github.com/initone1/contentstack_ecommerce_flutter_app/blob/master/assets/screens/mobile_detail_2.png" width="650" alt="accessibility text">
+
+<img src="https://github.com/initone1/contentstack_ecommerce_flutter_app/blob/master/assets/screens/mobile_detail_3.png" width="650" alt="accessibility text">
+
+<img src="https://github.com/initone1/contentstack_ecommerce_flutter_app/blob/master/assets/screens/web_home.png" width="650" alt="accessibility text">
+
+<img src="https://github.com/initone1/contentstack_ecommerce_flutter_app/blob/master/assets/screens/web_detail.png" width="650" alt="accessibility text">
+
+<img src="https://github.com/initone1/contentstack_ecommerce_flutter_app/blob/master/assets/screens/web_detail_1.png" width="650" alt="accessibility text">
+</p>
 
 ## Tutorial
 
@@ -22,5 +35,3 @@ We have created an in-depth tutorial on how you can create an Flutter E-Commerce
 ## Documentation
 
 Read Contentstack [docs](https://www.contentstack.com/docs)
-
-

@@ -6,8 +6,8 @@ part of 'entrymodel.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-EntryModel _$EntryModelFromJson(Map<String, dynamic> json) {
-  return EntryModel(
+Lamp _$LampFromJson(Map<String, dynamic> json) {
+  return Lamp(
     json['locale'] as String,
     json['title'] as String,
     json['url'] as String,
@@ -26,8 +26,7 @@ EntryModel _$EntryModelFromJson(Map<String, dynamic> json) {
   );
 }
 
-Map<String, dynamic> _$EntryModelToJson(EntryModel instance) =>
-    <String, dynamic>{
+Map<String, dynamic> _$LampToJson(Lamp instance) => <String, dynamic>{
       'locale': instance.locale,
       'title': instance.title,
       'url': instance.url,

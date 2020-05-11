@@ -1,10 +1,12 @@
 import 'package:ecommerce/src/homepage/griditems.dart';
 import 'package:ecommerce/src/homepage/progressbar.dart';
 import 'package:ecommerce/src/model/entrymodel.dart';
-import 'package:ecommerce/src/network/request.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_icons/flutter_icons.dart';
+
+// import contentstack package below.
+import 'package:contentstack/contentstack.dart' as contentstack;
 
 class HomePage extends StatefulWidget {
   HomePage({Key key, this.title}) : super(key: key);
@@ -16,7 +18,7 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-  List<EntryModel> lamps = [];
+  List<Lamp> lamps = [];
 
   @override
   void initState() {
@@ -24,19 +26,23 @@ class _HomePageState extends State<HomePage> {
     super.initState();
   }
 
-  getLamps() async {
-    final network = Network();
-    await network.getRequest<List<EntryModel>, EntryModel>().then((response) {
-      //print(response);
+  Future getLamps() async {
+    final stack = contentstack.Stack('blt02532e5510d39dec', 'cs253acbe45719247760e342eb', 'mobile');
+    final query = stack.contentType('ecommerce_app_android').entry().query();
+    await query.find().then((response) {
       setState(() {
-        lamps.addAll(response);
+        final listObj = response['entries'];
+        for(Map<String, dynamic> lamp in listObj){
+          lamps.add(Lamp.fromJson(lamp));
+        }
       });
-    }).catchError((error) {
-      print(error);
+    }).catchError((error){
+      print(error.toString());
       return Center(
-        child: Text('Could Not Fetch Data'),
+        child: Text('Could Not Fetch Data: $error'),
       );
     });
+
   }
 
   @override

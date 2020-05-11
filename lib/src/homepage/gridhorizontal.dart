@@ -1,4 +1,4 @@
-import 'package:ecommerce/src/detailpage/lampdetail.dart';
+//import 'package:ecommerce/src/detailpage/lampdetail.dart';
 import 'package:ecommerce/src/model/entrymodel.dart';
 import 'package:flutter/material.dart';
 
@@ -8,11 +8,11 @@ class GridHorizontal extends StatelessWidget {
     @required this.lamps,
   }) : super(key: key);
 
-  final List<EntryModel> lamps;
+  final List<Lamp> lamps;
 
   @override
   Widget build(BuildContext context) {
-    final Orientation orientation = MediaQuery.of(context).orientation;
+    //final Orientation orientation = MediaQuery.of(context).orientation;
     return Container(
       padding: EdgeInsets.all(10),
       child: GridView.builder(

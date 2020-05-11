@@ -3,7 +3,7 @@ import 'package:json_annotation/json_annotation.dart';
 part 'entrymodel.g.dart';
 
 @JsonSerializable(createFactory: true)
-class EntryModel {
+class Lamp {
   String locale;
   String title;
   String url;
@@ -24,7 +24,7 @@ class EntryModel {
   String updatedAt;
   @JsonKey(name: '_version')
   int version;
-  EntryModel(
+  Lamp(
       this.locale,
       this.title,
       this.url,
@@ -40,7 +40,7 @@ class EntryModel {
       this.createdAt,
       this.updatedAt,
       this.version);
-  factory EntryModel.fromJson(Map<String, dynamic> json) =>
-      _$EntryModelFromJson(json);
-  Map<String, dynamic> toJson() => _$EntryModelToJson(this);
+  factory Lamp.fromJson(Map<String, dynamic> json) =>
+      _$LampFromJson(json);
+  Map<String, dynamic> toJson() => _$LampToJson(this);
 }

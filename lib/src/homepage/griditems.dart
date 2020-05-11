@@ -9,7 +9,7 @@ class GridItems extends StatelessWidget {
     @required this.orientation,
   }) : super(key: key);
 
-  final List<EntryModel> lamps;
+  final List<Lamp> lamps;
   final Orientation orientation;
 
   @override

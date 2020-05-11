@@ -29,7 +29,7 @@ Create an Flutter E-Commerce app using Contentstack Dart SDK.
 
 We have created an in-depth tutorial on how you can create an Flutter E-Commerce app Contentstack Dart SDK. Refer to the steps given in the following tutorial to create a fully functional Flutter E-Commerce app.
 
-[Create an flutter e-commerce app using Contentstack Dart SDK](https://www.contentstack.com/docs/developers/sample-apps/build-an-flutter-e-commerce-app-using-contentstack-s-dart-sdk)
+[Create an flutter e-commerce app using Contentstack Dart SDK](https://www.contentstack.com/docs/developers/dart/get-started-with-dart-sdk/)
 
 
 ## Documentation

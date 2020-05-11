@@ -9,8 +9,8 @@ class LampDetail extends StatefulWidget {
     this.lamp, this.lampList
   }) : super(key: key);
 
-  final EntryModel lamp;
-  final List<EntryModel> lampList;
+  final Lamp lamp;
+  final List<Lamp> lampList;
 
   @override
   _LampDetailState createState() => _LampDetailState();

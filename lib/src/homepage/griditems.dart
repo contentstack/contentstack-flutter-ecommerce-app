@@ -26,7 +26,10 @@ class GridItems extends StatelessWidget {
               Navigator.push(
                 context,
                 MaterialPageRoute(
-                    builder: (context) => LampDetail(lamp: lamps[index], lampList: lamps,)),
+                    builder: (context) => LampDetail(
+                          lamp: lamps[index],
+                          lampList: lamps,
+                        )),
               );
             },
             child: new Card(

@@ -4,10 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_icons/flutter_icons.dart';
 
 class LampDetail extends StatefulWidget {
-  LampDetail({
-    Key key,
-    this.lamp, this.lampList
-  }) : super(key: key);
+  LampDetail({Key key, this.lamp, this.lampList}) : super(key: key);
 
   final Lamp lamp;
   final List<Lamp> lampList;
@@ -103,7 +100,8 @@ class _LampDetailState extends State<LampDetail> {
                       )),
                   decoration: BoxDecoration(
                       color: Colors.amber,
-                      borderRadius: BorderRadius.only(topLeft: Radius.circular(60))),
+                      borderRadius:
+                          BorderRadius.only(topLeft: Radius.circular(60))),
                 )
               ],
             ),
